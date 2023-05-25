@@ -1,17 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Books from "./components/Books";
 
-function App() {
+import Info from "./components/Info";
+import Edit from "./components/Edit";
+
+//router
+import { Routes, Route } from "react-router-dom";
+
+function App(props) {
+  
   return (
-    <div>
-<div className='header'>
+    <>
+      <Header />
 
-    </div>
-    <div className='main'>
-
-    </div>
-    </div>
-    
+      <Routes>
+        <Route path="/" element={<Books book={ props.book } />} />
+        <Route path="/info" element={<Info />} />
+        <Route path="/edit" element={<Edit />} />
+      </Routes>
+    </>
   );
 }
 
