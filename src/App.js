@@ -14,7 +14,7 @@ function App(props) {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Books book={ props.book } />} />
+        <Route path="/" element={<Books />} />
         <Route path="/info" element={<Info />} />
         <Route path="/edit" element={<Edit />} />
       </Routes>

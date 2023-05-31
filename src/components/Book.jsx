@@ -21,13 +21,10 @@ const Book = (props) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {props.book.name}
+          Наука и Вера
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Жанр: Исторична
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Инфа о книге
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Автор: К.Джон Коллинз

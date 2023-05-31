@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
