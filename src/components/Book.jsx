@@ -36,12 +36,9 @@ const Book = (props) => {
             Дата останього читання: 15.04.2023
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions style={{display: "flex",justifyContent: "center",alignItems: "center"}}>
           <NavLink to="/info">
             <Button variant="contained" size="small">Інфо</Button>
-          </NavLink>
-          <NavLink to="/edit">
-            <Button variant="contained" size="small">Редагувати</Button>
           </NavLink>
         </CardActions>
       </Card>

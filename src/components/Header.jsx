@@ -9,11 +9,11 @@ import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} >
       <AppBar position="static">
         <Toolbar variant="dense">
-          <NavLink to="/" style={{ textDecoration: 0 }}>
-            <Typography variant="h6" color="inherit" component="div">
+          <NavLink to="/" style={{ textDecoration: 0, padding: '20px'}}>
+            <Typography variant="h6" color="inherit" component={'div'}>
               MyBook
             </Typography>
           </NavLink>
