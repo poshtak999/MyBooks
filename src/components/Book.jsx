@@ -11,6 +11,7 @@ import { Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 const Book = (props) => {
+  console.log(props);
   return (
     <div>
       <Card sx={{ maxWidth: 300, m: 5 }}>

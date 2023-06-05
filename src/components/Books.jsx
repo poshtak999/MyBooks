@@ -2,9 +2,12 @@ import React from "react";
 
 import Book from "./Book";
 import { Grid } from "@mui/material";
+import bookDate from "../data/booksDate";
 
 const Books = (props) => {
-  
+  const book = bookDate.map((book) => {
+    return <Book data={book} id={book.id} />;
+  });
   return (
     <>
       <Grid
@@ -16,14 +19,7 @@ const Books = (props) => {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <Book />
-        <Book />
-        <Book />
-        <Book />
-        <Book />
-        <Book />
-        <Book />
-        <Book />
+        {book}
       </Grid>
     </>
   );
