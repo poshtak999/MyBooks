@@ -10,8 +10,8 @@ import { Typography } from "@mui/material";
 
 import { NavLink } from "react-router-dom";
 
-const Book = (props) => {
-  const { name, genre, author, dateStart, dateEnd } = props;
+const Book = ({data}) => {
+  const { name, genre, author, dateStart, dateEnd } = data;
   return (
     <div>
       <Card sx={{ maxWidth: 300, m: 5 }}>
