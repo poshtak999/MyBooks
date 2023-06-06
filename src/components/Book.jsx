@@ -10,8 +10,8 @@ import { Typography } from "@mui/material";
 
 import { NavLink } from "react-router-dom";
 
-const Book = (props) => {
-  console.log(props);
+const Book = ({data}) => {
+  const { name, genre, author, dateStart, dateEnd } = data;
   return (
     <div>
       <Card sx={{ maxWidth: 300, m: 5 }}>
@@ -22,19 +22,19 @@ const Book = (props) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-          Наука и Вера
+          {name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Жанр: Исторична
+            Жанр: {genre}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Автор: К.Джон Коллинз
+            Автор: {author}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Дата початку читання: 10.03.2023
+            Дата початку читання: {dateStart}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Дата останього читання: 15.04.2023
+            Дата останього читання: {dateEnd}
           </Typography>
         </CardContent>
         <CardActions style={{display: "flex",justifyContent: "center",alignItems: "center"}}>
