@@ -4,10 +4,11 @@ import Books from "./components/Books";
 
 import Info from "./components/Info";
 import Edit from "./components/Edit";
-import Modalopen from "./components/Modalopen";
+
 
 //router
 import { Routes, Route } from "react-router-dom";
+import { Button } from "@mui/material";
 
 function App(props) {
   return (
@@ -19,7 +20,6 @@ function App(props) {
         <Route path="/info" element={<Info />} />
         <Route path="/edit" element={<Edit />} />
       </Routes>
-      <Modalopen />
     </>
   );
 }
