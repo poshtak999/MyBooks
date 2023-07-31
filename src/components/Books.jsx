@@ -6,7 +6,7 @@ import bookDate from "../data/booksDate";
 
 const Books = (props) => {
   const book = bookDate.map((book) => {
-    return <Book data={book} id={book.id} />;
+    return <Book key={book.id} data={book} id={book.id} />;
   });
   return (
     <>
